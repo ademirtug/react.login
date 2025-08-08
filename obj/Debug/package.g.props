@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">@selestra11/react.auth</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.8</PackageJsonVersion>
+    <PackageJsonDescription Condition="$(PackageJsonDescription) == ''">Reusable Authentication Components for React</PackageJsonDescription>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">./dist/auth-package.es.js</PackageJsonMain>
+    <PackageJsonFiles Condition="$(PackageJsonFiles) == ''">[
+  "dist"
+]</PackageJsonFiles>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
+    <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
+    <PackageJsonScriptsPrepublishonly Condition="$(PackageJsonScriptsPrepublishonly) == ''">npm run build</PackageJsonScriptsPrepublishonly>
+    <PackageJsonPeerdependenciesReact Condition="$(PackageJsonPeerdependenciesReact) == ''">^19.0.0</PackageJsonPeerdependenciesReact>
+    <PackageJsonPeerdependenciesReactDom Condition="$(PackageJsonPeerdependenciesReactDom) == ''">^19.0.0</PackageJsonPeerdependenciesReactDom>
+    <PackageJsonPeerdependenciesReactRouterDom Condition="$(PackageJsonPeerdependenciesReactRouterDom) == ''">^7.7.1</PackageJsonPeerdependenciesReactRouterDom>
+    <PackageJsonPeerdependenciesJwtDecode Condition="$(PackageJsonPeerdependenciesJwtDecode) == ''">^4.0.0</PackageJsonPeerdependenciesJwtDecode>
+    <PackageJsonDevdependenciesVitejsPluginReact Condition="$(PackageJsonDevdependenciesVitejsPluginReact) == ''">^4.6.0</PackageJsonDevdependenciesVitejsPluginReact>
+    <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^7.0.4</PackageJsonDevdependenciesVite>
+  </PropertyGroup>
+</Project>
