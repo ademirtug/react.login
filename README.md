@@ -83,9 +83,6 @@ function LoginPage() {
 }
 ```
 
-> Customize styling via `Login.css`.
-
----
 
 ## ⚙️ Customization
 
@@ -94,7 +91,7 @@ function LoginPage() {
 | Prop             | Type     | Default                          | Description                          |
 |------------------|----------|----------------------------------|--------------------------------------|
 | `endpoints`      | Object   | `{ login, logout, me, refresh }` | Customize API endpoint URLs |
-| `tokenStorageKey`| string   | `"leximo-auth-token"`            | Change token storage key in browser  |
+| `tokenStorageKey`| string   | `"react-auth-token"`             | Change token storage key in browser  |
 
 ---
 

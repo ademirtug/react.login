@@ -13,7 +13,7 @@ export default function AuthProvider({
         me: "/api/v1/auth/me",
         refresh: "/api/v1/auth/refresh"
     },
-    tokenStorageKey = "leximo-auth-token"
+    tokenStorageKey = "react-auth-token"
 }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
