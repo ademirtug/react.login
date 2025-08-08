@@ -1,6 +1,4 @@
-﻿# @selestra11/react.auth
-
-Reusable Authentication Components for React.
+﻿Reusable Authentication Components for React.
 
 > Lightweight React authentication package with JWT support, built-in login form, context provider, and integration with `react-router-dom`.
 
@@ -43,7 +41,7 @@ npm install react@^19.0.0 react-dom@^19.0.0 react-router-dom@^7.7.1 jwt-decode
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import AuthProvider from "@selestra11/react.auth";
+import { AuthProvider } from "@selestra11/react.auth";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -75,10 +73,10 @@ const Dashboard = () => {
 
 ## 🧪 Built-in Login Form
 
-Use the included `SplitLogin` component for a quick login page.
+Use the included `SplitLogin` component for a quick login page:
 
 ```jsx
-import SplitLogin from "@selestra11/react.auth/dist/SplitLogin";
+import { SplitLogin } from "@selestra11/react.auth";
 
 function LoginPage() {
   return <SplitLogin />;
@@ -93,10 +91,10 @@ function LoginPage() {
 
 ### AuthProvider Props
 
-| Prop             | Type     | Default                    | Description                          |
-|------------------|----------|----------------------------|--------------------------------------|
+| Prop             | Type     | Default                          | Description                          |
+|------------------|----------|----------------------------------|--------------------------------------|
 | `endpoints`      | Object   | `{ login, logout, me, refresh }` | Customize API endpoint URLs |
-| `tokenStorageKey`| string   | `"leximo-auth-token"`     | Change token storage key in browser  |
+| `tokenStorageKey`| string   | `"leximo-auth-token"`            | Change token storage key in browser  |
 
 ---
 
@@ -125,25 +123,4 @@ Returns new token.
 
 Logs the user out.
 
----
 
-## 📁 Folder Structure
-
-```
-.
-├── AuthProvider.jsx     # Main context + auth logic
-├── SplitLogin.jsx       # Built-in UI login form
-├── Login.css            # Styles for login page
-```
-
----
-
-## 📜 License
-
-MIT
-
----
-
-## 🙋‍♂️ Author
-
-Made with ❤️ by [@selestra11](https://github.com/selestra11)
