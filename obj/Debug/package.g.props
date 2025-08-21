@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
-    <PackageJsonName Condition="$(PackageJsonName) == ''">@selestra11/react.auth</PackageJsonName>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.8</PackageJsonVersion>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">@selestra11/react.login</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.1</PackageJsonVersion>
     <PackageJsonDescription Condition="$(PackageJsonDescription) == ''">Reusable Authentication Components for React</PackageJsonDescription>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonMain Condition="$(PackageJsonMain) == ''">./dist/auth-package.es.js</PackageJsonMain>

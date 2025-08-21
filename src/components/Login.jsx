@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useAuth } from "../providers/AuthProvider";
 import './Login.css';
 
@@ -10,14 +10,17 @@ export default function SplitLogin() {
     const [isLoading, setIsLoading] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
     const { login } = useAuth();
+
+    const redirectTo = searchParams.get("redirect") || "";
 
     const handleLogin = async (e) => {
         e.preventDefault();
         setIsLoading(true);
         const result = await login(email, password, rememberMe);
         setIsLoading(false);
-        if (result) navigate('/');
+        if (result) navigate(redirectTo, { replace: true });
         else setError('Invalid email or password');
     };
 

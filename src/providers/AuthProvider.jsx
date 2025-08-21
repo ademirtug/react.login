@@ -17,7 +17,11 @@ export default function AuthProvider({
 }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [token, setToken] = useState(localStorage.getItem(tokenStorageKey) || null);
+    const [token, setToken] = useState(
+        localStorage.getItem(tokenStorageKey) ||
+        sessionStorage.getItem(tokenStorageKey) ||
+        null
+    );
 
     useEffect(() => {
         const fetchUser = async () => {
@@ -37,12 +41,18 @@ export default function AuthProvider({
                 if (response.ok) {
                     const result = await response.json();
                     setUser(result);
+                    setToken(token); // Ensure token is set in state
                 } else {
+                    // If the token is invalid, clear it from both storage locations
                     localStorage.removeItem(tokenStorageKey);
+                    sessionStorage.removeItem(tokenStorageKey);
+                    setToken(null);
                 }
             } catch (e) {
                 console.error("Auth check failed", e);
                 localStorage.removeItem(tokenStorageKey);
+                sessionStorage.removeItem(tokenStorageKey);
+                setToken(null);
             } finally {
                 setLoading(false);
             }

@@ -1,8 +1,28 @@
+/* Reset and global box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden; /* Prevent scrollbars */
+    font-family: 'Inter', sans-serif;
+}
+
 /* Layout */
 .login-container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh; /* Use fixed height instead of min-height */
+    width: 100vw;
     font-family: 'Inter', sans-serif;
+    overflow: hidden; /* Prevent any internal overflow */
 }
 
 /* Left image area */
@@ -35,18 +55,19 @@
     .login-left h2 {
         font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin: 0 0 1rem 0;
     }
 
     .login-left p {
         font-size: 1.1rem;
         opacity: 0.9;
+        margin: 0;
     }
 
 /* Right side - login form */
 .login-right {
     flex: 1;
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced vertical padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,22 +85,26 @@
     color: #eee;
 }
 
+/* Form container */
 .login-form-container {
     max-width: 400px;
     width: 100%;
+    padding: 0 0.5rem; /* Prevent edge overflow on small screens */
+    box-sizing: border-box;
 }
 
     .login-form-container h2 {
         font-size: 2rem;
         font-weight: 700;
-        margin-bottom: 0.5rem;
+        margin: 0 0 0.5rem 0;
     }
 
     .login-form-container p {
         font-size: 0.9rem;
-        margin-bottom: 2rem;
+        margin: 0 0 1.5rem 0; /* Reduced from 2rem */
     }
 
+/* Error message */
 .login-error {
     background-color: #fee2e2;
     color: #dc2626;
@@ -194,10 +219,11 @@
         cursor: not-allowed;
     }
 
+/* Spinner */
 .login-spinner {
     width: 1rem;
     height: 1rem;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-top: 2px solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -212,7 +238,7 @@
 
 /* Social login */
 .login-social {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-align: center;
 }
 
@@ -280,7 +306,7 @@
 
 .login-social-icons button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .login-social-icons button:nth-child(1):hover {
@@ -305,7 +331,7 @@
 /* Signup link */
 .login-signup {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
     color: #666;
 }
@@ -337,9 +363,7 @@
     }
 
     .login-right {
-        flex: none;
-        width: 100%;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .login-social p::before,
