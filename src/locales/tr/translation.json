@@ -1,0 +1,17 @@
+﻿{
+  "login": {
+    "welcomeBack": "Tekrar Hoşgeldiniz",
+    "loginAccess": "Gösterge panelinize erişmek ve hesabınızı yönetmek için giriş yapın.",
+    "signIn": "Giriş Yap",
+    "enterDetails": "Giriş yapmak için bilgilerinizi girin",
+    "email": "E-posta",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "password": "Şifre",
+    "passwordPlaceholder": "Şifrenizi girin",
+    "rememberMe": "Beni hatırla",
+    "forgotPassword": "Şifremi unuttum?",
+    "signInButton": "Giriş Yap",
+    "signingIn": "Giriş yapılıyor...",
+    "invalidCredentials": "Geçersiz e-posta veya şifre"
+  }
+}

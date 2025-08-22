@@ -2,21 +2,34 @@
 <Project>
   <PropertyGroup>
     <PackageJsonName Condition="$(PackageJsonName) == ''">@selestra11/react.login</PackageJsonName>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.3</PackageJsonVersion>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.8</PackageJsonVersion>
     <PackageJsonDescription Condition="$(PackageJsonDescription) == ''">Reusable Authentication Components for React</PackageJsonDescription>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonMain Condition="$(PackageJsonMain) == ''">./dist/auth-package.es.js</PackageJsonMain>
     <PackageJsonFiles Condition="$(PackageJsonFiles) == ''">[
-  "dist"
+  "dist",
+  "src/locales"
 ]</PackageJsonFiles>
     <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">vite</PackageJsonScriptsDev>
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsPrepublishonly Condition="$(PackageJsonScriptsPrepublishonly) == ''">npm run build</PackageJsonScriptsPrepublishonly>
+    <PackageJsonPeerdependenciesI18next Condition="$(PackageJsonPeerdependenciesI18next) == ''">^23.0.0</PackageJsonPeerdependenciesI18next>
+    <PackageJsonPeerdependenciesI18nextBrowserLanguagedetector Condition="$(PackageJsonPeerdependenciesI18nextBrowserLanguagedetector) == ''">^8.0.0</PackageJsonPeerdependenciesI18nextBrowserLanguagedetector>
+    <PackageJsonPeerdependenciesI18nextHttpBackend Condition="$(PackageJsonPeerdependenciesI18nextHttpBackend) == ''">^3.0.0</PackageJsonPeerdependenciesI18nextHttpBackend>
+    <PackageJsonPeerdependenciesJwtDecode Condition="$(PackageJsonPeerdependenciesJwtDecode) == ''">^4.0.0</PackageJsonPeerdependenciesJwtDecode>
     <PackageJsonPeerdependenciesReact Condition="$(PackageJsonPeerdependenciesReact) == ''">^19.0.0</PackageJsonPeerdependenciesReact>
     <PackageJsonPeerdependenciesReactDom Condition="$(PackageJsonPeerdependenciesReactDom) == ''">^19.0.0</PackageJsonPeerdependenciesReactDom>
+    <PackageJsonPeerdependenciesReactI18next Condition="$(PackageJsonPeerdependenciesReactI18next) == ''">^14.0.0</PackageJsonPeerdependenciesReactI18next>
     <PackageJsonPeerdependenciesReactRouterDom Condition="$(PackageJsonPeerdependenciesReactRouterDom) == ''">^7.7.1</PackageJsonPeerdependenciesReactRouterDom>
-    <PackageJsonPeerdependenciesJwtDecode Condition="$(PackageJsonPeerdependenciesJwtDecode) == ''">^4.0.0</PackageJsonPeerdependenciesJwtDecode>
     <PackageJsonDevdependenciesVitejsPluginReact Condition="$(PackageJsonDevdependenciesVitejsPluginReact) == ''">^4.6.0</PackageJsonDevdependenciesVitejsPluginReact>
+    <PackageJsonDevdependenciesI18next Condition="$(PackageJsonDevdependenciesI18next) == ''">^23.0.0</PackageJsonDevdependenciesI18next>
+    <PackageJsonDevdependenciesReactI18next Condition="$(PackageJsonDevdependenciesReactI18next) == ''">^14.0.0</PackageJsonDevdependenciesReactI18next>
+    <PackageJsonDevdependenciesI18nextBrowserLanguagedetector Condition="$(PackageJsonDevdependenciesI18nextBrowserLanguagedetector) == ''">^8.2.0</PackageJsonDevdependenciesI18nextBrowserLanguagedetector>
+    <PackageJsonDevdependenciesI18nextHttpBackend Condition="$(PackageJsonDevdependenciesI18nextHttpBackend) == ''">^3.0.2</PackageJsonDevdependenciesI18nextHttpBackend>
     <PackageJsonDevdependenciesVite Condition="$(PackageJsonDevdependenciesVite) == ''">^7.0.4</PackageJsonDevdependenciesVite>
+    <PackageJsonDevdependenciesReact Condition="$(PackageJsonDevdependenciesReact) == ''">^19.0.0</PackageJsonDevdependenciesReact>
+    <PackageJsonDevdependenciesReactDom Condition="$(PackageJsonDevdependenciesReactDom) == ''">^19.0.0</PackageJsonDevdependenciesReactDom>
+    <PackageJsonDevdependenciesReactRouterDom Condition="$(PackageJsonDevdependenciesReactRouterDom) == ''">^7.7.1</PackageJsonDevdependenciesReactRouterDom>
+    <PackageJsonDevdependenciesJwtDecode Condition="$(PackageJsonDevdependenciesJwtDecode) == ''">^4.0.0</PackageJsonDevdependenciesJwtDecode>
   </PropertyGroup>
 </Project>

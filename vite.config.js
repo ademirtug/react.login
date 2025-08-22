@@ -15,13 +15,22 @@ export default defineConfig({
         },
         cssCodeSplit: false,
         rollupOptions: {
-            external: ['react', 'react-dom', 'react-router-dom', 'jwt-decode'],
+            external: [
+                'react',
+                'react-dom',
+                'react-router-dom',
+                'jwt-decode',
+                'i18next',
+                'react-i18next'
+            ],
             output: {
                 globals: {
                     react: 'React',
                     'react-dom': 'ReactDOM',
                     'react-router-dom': 'ReactRouterDOM',
-                    'jwt-decode': 'jwtDecode'
+                    'jwt-decode': 'jwtDecode',
+                    'i18next': 'i18next',
+                    'react-i18next': 'ReactI18next'
                 },
                 assetFileNames: 'assets/[name][extname]'
             }

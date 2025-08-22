@@ -1,0 +1,20 @@
+{
+  "login": {
+	"welcomeBack": "Welcome Back",
+	"loginAccess": "Login to access your dashboard and manage your account.",
+	"signIn": "Sign In",
+	"enterDetails": "Enter your details to login",
+	"email": "Email",
+	"emailPlaceholder": "Enter your email",
+	"password": "Password",
+	"passwordPlaceholder": "Enter your password",
+	"rememberMe": "Remember me",
+	"forgotPassword": "Forgot password?",
+	"signInButton": "Sign In",
+	"signingIn": "Signing in...",
+	"invalidCredentials": "Invalid email or password",
+	"orSignInWith": "Or sign in with",
+	"noAccount": "Don't have an account?",
+	"signUp": "Sign up"
+  }
+}

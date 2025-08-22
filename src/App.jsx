@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import SplitLogin from './components/Login'; // Assuming SplitLogin.jsx is in the same directory
 import AuthProvider, { useAuth } from './providers/AuthProvider'; // Assuming AuthProvider.jsx is in the same directory
+import './i18n';
+import { useTranslation } from 'react-i18next'; // Add this import
+
 
 // A simple home page component to show once a user is logged in
 const HomePage = () => {
@@ -48,6 +51,9 @@ const ProtectedWrapper = ({ children }) => {
 
 // The main App component where routing is set up
 function App() {
+    const { i18n } = useTranslation();
+
+    i18n.changeLanguage("tr");
     return (
         // The AuthProvider makes the auth context available to all child components
         <AuthProvider>
