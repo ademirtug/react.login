@@ -151,7 +151,7 @@ export default function AuthProvider({
         }}>
             {!loading ? children :
                 <div className="d-flex justify-content-center align-items-center vh-100">
-                    <i className="fas fa-spinner fa-spin fa-3x text-primary"></i>
+                    <i className="material-symbols-rounded text-primary">progress_activity</i>
                 </div>
             }
         </AuthContext.Provider>

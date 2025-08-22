@@ -1,6 +1,6 @@
 {
   "name": "@selestra11/react.login",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Reusable Authentication Components for React",
   "type": "module",
   "main": "./dist/auth-package.es.js",

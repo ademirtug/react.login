@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <PackageJsonName Condition="$(PackageJsonName) == ''">@selestra11/react.login</PackageJsonName>
-    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.1</PackageJsonVersion>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">0.0.3</PackageJsonVersion>
     <PackageJsonDescription Condition="$(PackageJsonDescription) == ''">Reusable Authentication Components for React</PackageJsonDescription>
     <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
     <PackageJsonMain Condition="$(PackageJsonMain) == ''">./dist/auth-package.es.js</PackageJsonMain>
